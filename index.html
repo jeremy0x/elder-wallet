@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#100527]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#100527" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Primary Meta Tags -->
+    <title>Elder Wallet</title>
+    <meta name="title" content="Elder Wallet" />
+    <meta name="description" content="{{PAGE_DESCRIPTION}}" />
+    <meta name="keywords" content="{{KEYWORDS}}" />
+
+    <!-- External assets -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{FAVICON_32x32_URL}}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{FAVICON16x16__URL}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{FAVICON_180x180_URL}}"
+    />
+    <!-- You can generate a favicon using a tool like https://favicon.io -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{PAGE_URL}}" />
+    <meta property="og:title" content="Elder Wallet" />
+    <meta property="og:description" content="{{PAGE_DESCRIPTION}}" />
+    <meta property="og:image" content="{{OG_IMAGE_URL}}" />
+    <meta property="og:site_name" content="{{OG_SITE_NAME}}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{PAGE_URL}}" />
+    <meta property="twitter:title" content="Elder Wallet" />
+    <meta property="twitter:description" content="{{PAGE_DESCRIPTION}}" />
+    <meta property="twitter:image" content="{{TWITTER_IMAGE_URL}}" />
+
+    <!-- Schema markup for structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "{{SCHEMA_TYPE}}",
+        "name": "Elder Wallet",
+        "description": "{{PAGE_DESCRIPTION}}",
+        "url": "{{PAGE_URL}}",
+        "image": "{{SCHEMA_IMAGE_URL}}"
+      }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Darker Grotesque Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-darker-grotesque text-white">
+    <!-- Hero -->
+    <section class="relative bg-hero-bg bg-cover bg-center min-h-screen">
+      <div class="absolute inset-0 bg-[#100527]/80 z-0"></div>
+      <!-- <div
+        class="absolute bottom-0 w-full h-14 bg-transparent backdrop-blur-sm z-10"
+      ></div> -->
+
+      <div class="container mx-auto text-center grid gap-8 pt-40">
+        <div class="flex gap-8 items-center justify-center z-20">
+          <h1 class="font-bold text-8xl">
+            <img
+              src="./assets/images/elder-wallet-logo.png"
+              alt=""
+              class="w-auto h-20 inline-block align-middle pr-6"
+            /><span>Elder Wallet</span>
+          </h1>
+        </div>
+        <p class="font-semibold text-5xl z-20">Bitcoin meets runes</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-40 relative px-4 sm:px-8 lg:px-16">
+      <div
+        class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-cyan-500/50 -z-10 rounded-full blur-[200px]"
+      ></div>
+      <div
+        class="overflow-hidden absolute -top-1/4 right-0 mx-auto h-[600px] w-[600px] z-10 blur-[150px]"
+      >
+        <div
+          class="bg-purple-900/70 rounded-full w-full h-full translate-x-1/2"
+        ></div>
+      </div>
+      <div
+        class="absolute -top-4 left-0 w-full h-14 bg-transparent backdrop-blur-sm z-10"
+      ></div>
+
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between relative container mx-auto text-center text-white/70 z-20"
+      >
+        <div class="flex-1">
+          <img
+            src="https://www.orangecrypto.com/assets/take-pill-app-Byltqznp.webp"
+            alt=""
+            class="max-w-full"
+          />
+        </div>
+
+        <div class="flex-1">
+          <img
+            src="./assets/images/elder-wallet-logo.png"
+            alt="elder wallet logo"
+            class="w-auto h-20 mx-auto"
+          />
+          <p class="text-3xl leading-normal mt-6 font-medium max-w-3xl mx-auto">
+            Elder wallet is an ecosystem of financial products and services that
+            help
+            <span class="text-white"
+              >consumers and businesses manage bitcoin</span
+            >
+            and
+            <span class="text-white"
+              >other blockchain protocols on Runes Network</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
