@@ -1,3 +1,10 @@
+// AOS Config
+AOS.init({
+  duration: 1500,
+  once: true,
+  startEvent: 'DOMContentLoaded',
+});
+
 // Tailwind Config
 tailwind.config = {
   theme: {
@@ -9,8 +16,8 @@ tailwind.config = {
       fontFamily: {
         'darker-grotesque': ['Darker Grotesque', 'sans-serif'],
       },
-      screens: {
-        xsm: '475px',
+      colors: {
+        'blur-bg': '#5DFDCB',
       },
     },
   },
