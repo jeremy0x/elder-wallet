@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#13072d" />
     <meta name="robots" content="index, follow" />
 
     <!-- Primary Meta Tags -->
@@ -75,21 +74,34 @@
       href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Spline -->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.1.5/build/spline-viewer.js"
+    ></script>
   </head>
 
   <body class="font-darker-grotesque text-white overflow-x-hidden">
     <!-- Hero Section -->
-    <section class="relative bg-hero-bg bg-cover bg-center min-h-screen">
-      <div class="absolute inset-0 bg-[#13072d]/80 z-0"></div>
+    <section class="relative bg-hero-bg bg-cover bg-center min-h-[100dvh]">
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-[#13072d]/95 z-0"></div>
+      <!-- Cyan blur -->
+      <div
+        class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-cyan-500/50 z-10 rounded-full blur-[200px]"
+      ></div>
 
-      <div class="container mx-auto text-center grid gap-8 pt-40">
+      <div class="container mx-auto text-center grid gap-8 pt-20 sm:pt-28">
         <div class="flex gap-8 items-center justify-center z-20">
-          <h1 class="font-bold text-6xl sm:text-9xl">
+          <h1
+            class="font-bold text-6xl sm:text-9xl flex flex-col sm:flex-row flex-wrap gap-6 items-center"
+          >
             <img
               src="./assets/images/elder-wallet-logo.png"
               alt=""
-              class="w-auto h-16 sm:h-28 inline-block pr-6 pb-4"
-            /><span>Elder Wallet</span>
+              class="w-16 h-auto inline-block mx-auto sm:pt-4"
+            /><span class="whitespace-nowrap">Elder Wallet</span>
           </h1>
         </div>
         <p class="font-semibold text-4xl sm:text-6xl z-20">
@@ -97,10 +109,18 @@
         </p>
       </div>
 
+      <iframe
+        title="Wallet Animation"
+        src="https://my.spline.design/walletcopycopy-f6e6b4d6d5b87e2a92367f70c2d01778/"
+        frameborder="0"
+        width="100%"
+        height="500px"
+        class="pt-10 z-10 relative"
+      ></iframe>
+
+      <!-- Arrow Down Icon -->
       <a title="Scroll down" href="#wallet">
-        <div
-          class="z-50 absolute bottom-4 left-0 right-0 w-full text-center animate-bounce"
-        >
+        <div class="z-50 absolute bottom-4 left-4 animate-bounce">
           <svg
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="inherit"
@@ -108,7 +128,7 @@
             viewBox="0 0 25 17"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-20 h-20 mx-auto rotate-90"
+            class="w-10 sm:w-12 mx-auto rotate-90"
           >
             <path
               d="M24.249 8.526C19.0329 6.49941 17.7792 4.55448 16.7408 0.5"
