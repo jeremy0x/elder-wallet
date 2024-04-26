@@ -11,7 +11,7 @@ tailwind.config = {
     extend: {
       backgroundImage: {
         'hero-bg': "url('./assets/images/hero-bg.jpg')",
-        'rune-bg': "url('./assets/images/rune-bg.png')",
+        'rune-bg': "url('./assets/images/rune-bg.svg')",
       },
       fontFamily: {
         'darker-grotesque': ['Darker Grotesque', 'sans-serif'],
