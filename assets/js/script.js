@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
     ) {
-      navbar.style.backgroundColor = '#13072d';
+      navbar.style.backgroundColor = '#13072dd9';
     } else {
       navbar.style.backgroundColor = 'transparent';
     }
