@@ -87,6 +87,122 @@
   </head>
 
   <body class="font-darker-grotesque text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full z-40">
+      <div
+        class="container mx-auto flex items-center justify-between gap-8 px-4 py-6 sm:px-8 lg:py-4"
+      >
+        <a href="#" title="Elder Wallet">
+          <img
+            src="./assets/images/elder-wallet-logo.svg"
+            alt="Elder Wallet logo"
+            class="w-10"
+          />
+        </a>
+
+        <ul class="gap-16 font-semibold hidden lg:flex text-3xl">
+          <li>
+            <a
+              href="#wallet"
+              title="Home"
+              class="hover:text-cyan-500 transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tokenomics"
+              title="Tokenomics"
+              class="hover:text-cyan-500 transition-colors"
+              >Tokenomics</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              title="Docs"
+              class="hover:text-cyan-500 transition-colors"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a
+              href="#sponsors"
+              title="Backers"
+              class="hover:text-cyan-500 transition-colors"
+              >Backers</a
+            >
+          </li>
+        </ul>
+
+        <div class="lg:hidden">
+          <button title="Menu" type="button" id="menu-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <div
+      id="mobile-navbar"
+      class="fixed grid place-items-center top-0 left-0 w-full h-full bg-[#13072d]/95 backdrop-blur z-50 transform -translate-y-full overflow-y-auto transition-transform duration-300 ease-in-out"
+    >
+      <button
+        id="close-button"
+        type="button"
+        class="absolute top-8 right-8 text-4xl"
+      >
+        X
+      </button>
+      <ul
+        class="flex flex-col gap-12 p-8 text-center text-3xl font-inter font-semibold"
+      >
+        <li>
+          <a
+            href="#about"
+            title="About"
+            class="hover:text-cyan-500 transition-colors"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#tokenomics"
+            title="Tokenomics"
+            class="hover:text-cyan-500 transition-colors"
+            >Tokenomics</a
+          >
+        </li>
+        <li>
+          <a href="#" title="Docs" class="hover:text-cyan-500 transition-colors"
+            >Docs</a
+          >
+        </li>
+        <li>
+          <a
+            href="#sponsors"
+            title="Backers"
+            class="hover:text-cyan-500 transition-colors"
+            >Backers</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <!-- Hero Section -->
     <section class="relative bg-hero-bg bg-cover bg-center min-h-[100dvh]">
       <!-- Background Overlay -->
@@ -97,7 +213,7 @@
       ></div>
 
       <div
-        class="container mx-auto text-center grid gap-8 pt-20 sm:pt-28"
+        class="container mx-auto text-center grid gap-8 pt-32"
         data-aos="zoom-out"
       >
         <div class="flex gap-8 items-center justify-center z-20">
@@ -106,9 +222,7 @@
               src="./assets/images/elder-wallet-logo.svg"
               alt=""
               class="w-16 h-auto inline-block mx-auto sm:pt-4"
-            /><span class="font-bold text-7xl sm:text-9xl whitespace-nowrap"
-              >Elder Wallet</span
-            >
+            /><span class="font-bold text-7xl sm:text-9xl">Elder Wallet</span>
           </h1>
         </div>
         <p class="font-semibold text-5xl sm:text-6xl z-20">
@@ -145,7 +259,7 @@
 
       <!-- Arrow Down Icon -->
       <a title="Scroll down" href="#wallet">
-        <div class="z-50 absolute bottom-4 left-4 animate-bounce">
+        <div class="z-40 absolute bottom-4 left-4 animate-bounce">
           <svg
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="inherit"
@@ -175,10 +289,10 @@
       </a>
     </section>
 
-    <!-- Start: Wallet Details -->
+    <!-- Start: About -->
     <section
       class="pt-40 pb-20 relative px-4 sm:px-8 lg:px-16 bg-rune-bg lg:bg-contain bg-cover bg-center bg-no-repeat"
-      id="wallet"
+      id="about"
     >
       <!-- Shadow -->
       <div
@@ -225,7 +339,7 @@
         </div>
       </div>
     </section>
-    <!-- End: Wallet Details -->
+    <!-- End: About -->
 
     <!-- Start: Browser Extension Details -->
     <section
@@ -451,7 +565,7 @@
     <!-- Start: Explorer II -->
     <section
       class="py-20 relative px-4 sm:px-8 lg:px-16 bg-rune-bg lg:bg-contain bg-cover bg-center bg-no-repeat"
-      id=""
+      id="tokenomics"
     >
       <!-- Shadow -->
       <div
