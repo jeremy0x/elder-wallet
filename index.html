@@ -624,10 +624,7 @@
     <!-- End: Browser Extension Details -->
 
     <!-- Start: Market Cap -->
-    <section
-      class="relative container mx-auto px-4 sm:px-8 py-36"
-      id="market-cap"
-    >
+    <section class="relative px-4 sm:px-8 py-36" id="market-cap">
       <div class="-top-[10%] left-0 absolute">
         <img
           src="./assets/images/right-section-pattern.svg"
@@ -645,33 +642,43 @@
         class="absolute top-1/4 right-0 h-[200px] w-[200px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
       ></div>
 
-      <div
-        class="flex justify-center max-sm:flex-col md:justify-between gap-4 md:gap-9"
-      >
-        <div class="flex-1" data-aos="fade-up">
+      <div class="container mx-auto">
+        <div
+          class="flex justify-center max-sm:flex-col md:justify-between gap-4 md:gap-9"
+        >
+          <div class="flex-1" data-aos="fade-up">
+            <img
+              src="./assets/images/brc20-token-graph.svg"
+              alt=""
+              class="max-w-full w-full"
+            />
+          </div>
+          <div class="flex-1" data-aos="fade-up" data-aos-delay="500">
+            <img
+              src="./assets/images/market-cap-graph.svg"
+              alt=""
+              class="max-w-full w-full"
+            />
+          </div>
+          <div class="flex-1" data-aos="fade-up" data-aos-delay="1000">
+            <img
+              src="./assets/images/trading-volume-graph.svg"
+              alt=""
+              class="max-w-full w-full"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-8 max-sm:hidden"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
           <img
-            src="./assets/images/brc20-token-graph.svg"
+            src="./assets/images/table-screenshot.svg"
             alt=""
-            class="max-w-full w-full"
+            class="w-full"
           />
         </div>
-        <div class="flex-1" data-aos="fade-up" data-aos-delay="500">
-          <img
-            src="./assets/images/market-cap-graph.svg"
-            alt=""
-            class="max-w-full w-full"
-          />
-        </div>
-        <div class="flex-1" data-aos="fade-up" data-aos-delay="1000">
-          <img
-            src="./assets/images/trading-volume-graph.svg"
-            alt=""
-            class="max-w-full w-full"
-          />
-        </div>
-      </div>
-      <div class="mt-8 max-sm:hidden" data-aos="fade-up" data-aos-delay="1000">
-        <img src="./assets/images/table-screenshot.svg" alt="" class="w-full" />
       </div>
     </section>
     <!-- End: Market Cap -->
@@ -761,7 +768,18 @@
     <!-- End: Explorer II -->
 
     <!-- Start: Sponsors Section -->
-    <section id="backers" class="py-36 container mx-auto px-4 sm:px-8 lg:px-16">
+    <section
+      id="backers"
+      class="relative py-36 container mx-auto px-4 sm:px-8 lg:px-16"
+    >
+      <!-- Shadow -->
+      <div
+        class="absolute top-0 right-0 h-[150px] w-[200px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 h-[150px] w-[200px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
+      ></div>
+
       <div class="flex flex-col lg:flex-row justify-between gap-20">
         <h2
           class="uppercase text-3xl sm:text-5xl font-bold whitespace-nowrap xl:pr-36"
