@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#13072d] overflow-x-hidden">
+<html lang="en" class="bg-[#1B0942] overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -289,7 +289,7 @@
     <!-- Hidden Menu -->
     <div
       id="mobile-navbar"
-      class="fixed grid place-items-center top-0 left-0 w-full h-full bg-[#13072d]/95 backdrop-blur z-50 transform -translate-y-full overflow-y-auto transition-transform duration-300 ease-in-out"
+      class="fixed grid place-items-center top-0 left-0 w-full h-full bg-[#1B0942]/95 backdrop-blur z-50 transform -translate-y-full overflow-y-auto transition-transform duration-300 ease-in-out"
     >
       <button
         id="close-button"
@@ -335,10 +335,10 @@
 
     <!-- Hero Section -->
     <section
-      class="relative bg-hero-bg bg-cover bg-center flex flex-col items-center justify-center min-h-[100dvh] rounded-b-[7rem]"
+      class="relative bg-hero-bg bg-cover bg-center flex flex-col items-center justify-center min-h-[100dvh] rounded-b-[3rem] lg:rounded-b-[7rem] overflow-hidden"
     >
       <!-- Background Overlay -->
-      <div class="absolute inset-0 bg-[#13072d]/80 z-0"></div>
+      <div class="absolute inset-0 bg-[#190641]/75 z-0"></div>
       <!-- Shadow -->
       <div
         class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-blur-bg/50 z-10 rounded-full blur-[200px]"
@@ -424,17 +424,14 @@
     </section>
 
     <!-- Start: About -->
-    <section
-      class="pt-40 pb-20 relative px-4 sm:px-8 lg:px-16 bg-rune-bg lg:bg-contain bg-cover bg-center bg-no-repeat"
-      id="about"
-    >
+    <section class="pt-40 pb-20 relative px-4 sm:px-8 lg:px-16" id="about">
       <!-- Shadow -->
       <div
-        class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
+        class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[400px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
       ></div>
       <!-- Start: Purple Overlay -->
       <div
-        class="overflow-hidden absolute -top-1/4 right-0 mx-auto h-[600px] w-[600px] z-10 blur-[150px]"
+        class="overflow-hidden absolute top-0 right-0 mx-auto h-[400px] w-[400px] z-10 blur-[150px]"
       >
         <div
           class="bg-purple-900/70 rounded-full w-full h-full translate-x-1/2"
@@ -454,12 +451,19 @@
         </div>
 
         <div class="flex-1" data-aos="fade-left">
-          <div class="w-fit mx-auto">
+          <div class="w-fit mx-auto grid gap-6">
+            <div class="">
+              <img
+                src="./assets/images/about-section-pattern.svg"
+                alt=""
+                class="w-20 sm:w-36"
+              />
+            </div>
             <h3 class="text-3xl sm:text-4xl font-semibold text-white">
               Elder Wallet
             </h3>
             <p
-              class="text-2xl sm:text-3xl leading-normal mt-6 font-medium max-w-md"
+              class="text-2xl sm:text-3xl leading-normal font-medium max-w-md text-white/70"
             >
               Elder wallet is an ecosystem of financial products and services
               that help consumers and businesses manage bitcoin and other
@@ -472,18 +476,34 @@
     <!-- End: About -->
 
     <!-- Start: Browser Extension Details -->
-    <section
-      class="py-36 relative px-4 sm:px-8 lg:px-16 bg-rune-bg lg:bg-contain bg-cover bg-center bg-no-repeat"
-      id="extension"
-    >
+    <section class="py-36 relative px-4 sm:px-8 lg:px-16" id="extension">
+      <div class="absolute right-0 top-0 blur-[8px]">
+        <img
+          src="./assets/images/zig-zag-horizontal.svg"
+          alt=""
+          class="w-52 sm:w-72"
+        />
+      </div>
+
+      <!-- Shadows -->
+      <div
+        class="absolute top-1/4 left-0 h-[200px] w-[200px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
+      ></div>
+      <div
+        class="overflow-hidden absolute top-1/4 right-0 mx-auto h-[300px] w-[300px] -z-10 blur-[150px]"
+      >
+        <div
+          class="bg-purple-900/70 rounded-full w-full h-full translate-x-1/2"
+        ></div>
+      </div>
+
       <div
         class="flex flex-col sm:flex-row items-start justify-between gap-8 relative container mx-auto text-white z-20"
       >
         <div class="flex-1" data-aos="fade-right">
-          <div class="w-fit">
-            <p
-              class="text-2xl sm:text-3xl leading-normal mt-6 font-medium max-w-md"
-            >
+          <div class="w-fit flex items-center gap-4">
+            <img src="./assets/images/zig-zag-vertical.svg" alt="" />
+            <p class="text-2xl sm:text-3xl leading-normal font-medium max-w-md">
               Elder Wallet is a browser extension that is always on. Easily
               manage your Bitcoin and all other protocols on Runes network while
               browsing the internet.
@@ -563,7 +583,7 @@
       >
         <!-- Shadow -->
         <div
-          class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
+          class="absolute top-1/2 left-0 right-0 bottom-0 mx-auto h-[250px] w-[500px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
         ></div>
 
         <!-- Start: Screenshots -->
@@ -609,9 +629,26 @@
 
     <!-- Start: Market Cap -->
     <section
-      class="container mx-auto px-4 sm:px-8 py-36 bg-rune-bg lg:bg-contain bg-cover bg-center bg-no-repeat"
+      class="relative container mx-auto px-4 sm:px-8 py-36"
       id="market-cap"
     >
+      <div class="-top-[10%] left-0 absolute">
+        <img
+          src="./assets/images/right-section-pattern.svg"
+          alt=""
+          class="w-32 sm:w-40"
+        />
+      </div>
+
+      <!-- Shadow -->
+      <div
+        class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[400px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
+      ></div>
+
+      <div
+        class="absolute top-1/4 right-0 h-[200px] w-[200px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
+      ></div>
+
       <div
         class="flex justify-center max-sm:flex-col md:justify-between gap-4 md:gap-9"
       >
@@ -644,23 +681,19 @@
     <!-- End: Market Cap -->
 
     <!-- Start: Explorer -->
-    <section
-      class="py-36 relative px-4 sm:px-8 lg:px-16 bg-rune-bg lg:bg-contain bg-cover bg-center bg-no-repeat"
-      id="explorer"
-    >
+    <section class="py-36 relative px-4 sm:px-8 lg:px-16" id="explorer">
+      <div class="absolute right-0 top-0 blur-[8px]">
+        <img
+          src="./assets/images/zig-zag-horizontal.svg"
+          alt=""
+          class="w-52 sm:w-72"
+        />
+      </div>
+
       <!-- Shadow -->
       <div
         class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"
       ></div>
-      <!-- Start: Purple Overlay -->
-      <div
-        class="overflow-hidden absolute -top-1/4 right-0 mx-auto h-[600px] w-[600px] z-10 blur-[150px]"
-      >
-        <div
-          class="bg-purple-900/70 rounded-full w-full h-full translate-x-1/2"
-        ></div>
-      </div>
-      <!-- End: Purple Overlay -->
 
       <div
         class="flex flex-col sm:flex-row-reverse items-center justify-between gap-8 relative container mx-auto text-white/70 z-20"
@@ -693,10 +726,7 @@
     <!-- End: Explorer -->
 
     <!-- Start: Explorer II -->
-    <section
-      class="py-36 relative px-4 sm:px-8 lg:px-16 bg-rune-bg lg:bg-contain bg-cover bg-center bg-no-repeat"
-      id="tokenomics"
-    >
+    <section class="py-36 relative px-4 sm:px-8 lg:px-16" id="tokenomics">
       <!-- Shadow -->
       <div
         class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-blur-bg/50 -z-10 rounded-full blur-[200px]"

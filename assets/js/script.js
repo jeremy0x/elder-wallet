@@ -17,7 +17,7 @@ tailwind.config = {
         'darker-grotesque': ['Darker Grotesque', 'sans-serif'],
       },
       colors: {
-        'blur-bg': '#5DFDCB',
+        'blur-bg': '#A379FB',
       },
     },
   },
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
     ) {
-      navbar.style.backgroundColor = '#13072dd9';
+      navbar.style.backgroundColor = '#1b0942e4';
     } else {
       navbar.style.backgroundColor = 'transparent';
     }
