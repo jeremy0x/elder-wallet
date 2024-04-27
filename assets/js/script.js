@@ -51,8 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
       document.documentElement.scrollTop > 50
     ) {
       navbar.style.backgroundColor = '#1b0942e4';
+      navbar.classList.add('backdrop-blur');
     } else {
       navbar.style.backgroundColor = 'transparent';
+      navbar.classList.remove('backdrop-blur');
     }
   };
 });
