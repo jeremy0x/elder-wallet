@@ -10,7 +10,7 @@ tailwind.config = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-bg': "url('./assets/images/hero-bg.svg')",
+        'hero-bg': "url('./assets/images/hero-bg.jpg')",
         'rune-bg': "url('./assets/images/rune-bg.svg')",
       },
       fontFamily: {
