@@ -88,78 +88,205 @@
 
   <body class="font-darker-grotesque text-white overflow-x-hidden">
     <!-- Navbar -->
-    <nav
-      id="navbar"
-      class="fixed top-0 w-full z-50 border-b border-cyan-500/10 backdrop-blur"
-    >
+    <nav id="navbar" class="fixed top-0 w-full z-50 backdrop-blur">
       <div
-        class="container mx-auto flex items-center justify-between gap-8 px-4 py-6 sm:px-8 lg:py-4"
+        class="container mx-auto flex items-center justify-between gap-8 px-4 py-6 sm:px-8"
       >
-        <a href="#" title="Elder Wallet">
-          <img
-            src="./assets/images/elder-wallet-logo.svg"
-            alt="Elder Wallet logo"
-            class="w-10"
-          />
+        <a
+          href="#"
+          title="Elder Wallet"
+          class="uppercase text-[#D3BEFF] text-xl font-bold"
+        >
+          Elder Wallet
         </a>
 
-        <ul class="gap-16 font-semibold hidden md:flex text-2xl">
-          <li>
-            <a
-              href="#about"
-              title="Home"
-              class="hover:text-cyan-500 transition-colors"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#tokenomics"
-              title="Tokenomics"
-              class="hover:text-cyan-500 transition-colors"
-              >Tokenomics</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              title="Docs"
-              class="hover:text-cyan-500 transition-colors"
-              >Docs</a
-            >
-          </li>
-          <li>
-            <a
-              href="#backers"
-              title="Backers"
-              class="hover:text-cyan-500 transition-colors"
-              >Backers</a
-            >
-          </li>
-        </ul>
+        <!-- Start: Social Icons -->
+        <div class="md:flex items-center justify-center gap-8 hidden">
+          <!-- Twitter -->
+          <a
+            title="Twitter"
+            class="hover:scale-110 transition-all"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="w-14 h-14"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.25 13.1173L26.621 4.7334H24.8743L18.4741 12.0131L13.3622 4.7334H7.46631L15.1964 15.7415L7.46631 24.5334H9.2131L15.9719 16.8458L21.3704 24.5334H27.2663L19.25 13.1173ZM16.8575 15.8385L16.0743 14.7424L9.84249 6.02007H12.5255L17.5546 13.0592L18.3378 14.1554L24.8751 23.3052H22.1922L16.8575 15.8385Z"
+                  fill="#D3BEFF"
+                />
+                <path
+                  d="M22.4998 23.8004L9.8498 6.20039L9.2998 5.65039H13.1498L25.2498 23.8004H22.4998Z"
+                  fill="#D3BEFF"
+                />
+                <path
+                  d="M22.5008 23.8004L9.85078 6.20039L9.30078 5.65039H13.1508L25.2508 23.8004H22.5008Z"
+                  fill="#D3BEFF"
+                />
+              </svg> </i
+          ></a>
 
-        <div class="md:hidden">
+          <!-- Discord -->
+          <a
+            title="Discord"
+            class="hover:scale-110 transition-all"
+            href="https://discord.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="w-14 h-14"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_43_42)">
+                  <path
+                    d="M21.6856 6.65966C20.0285 5.88433 18.2566 5.32085 16.4042 5C16.1767 5.41132 15.9109 5.96455 15.7276 6.40464C13.7584 6.1085 11.8073 6.1085 9.8743 6.40464C9.69108 5.96455 9.41926 5.41132 9.18972 5C7.33526 5.32085 5.56134 5.8864 3.90421 6.66377C0.561752 11.7147 -0.344332 16.6401 0.108711 21.4956C2.3256 23.1511 4.47404 24.1568 6.58621 24.8149C7.10772 24.0971 7.57284 23.3341 7.97352 22.53C7.2104 22.2401 6.4795 21.8822 5.78888 21.4668C5.9721 21.3311 6.15131 21.1891 6.32446 21.0431C10.5367 23.0133 15.1135 23.0133 19.2755 21.0431C19.4506 21.1891 19.6298 21.3311 19.811 21.4668C19.1184 21.8843 18.3855 22.2421 17.6224 22.5321C18.023 23.3341 18.4862 24.0992 19.0097 24.8169C21.1239 24.1588 23.2743 23.1532 25.4912 21.4956C26.0228 15.8668 24.5831 10.9866 21.6856 6.65966ZM8.54739 18.5095C7.2829 18.5095 6.24592 17.329 6.24592 15.8915C6.24592 14.454 7.26076 13.2715 8.54739 13.2715C9.83405 13.2715 10.871 14.4519 10.8489 15.8915C10.8509 17.329 9.83405 18.5095 8.54739 18.5095ZM17.0525 18.5095C15.788 18.5095 14.7511 17.329 14.7511 15.8915C14.7511 14.454 15.7659 13.2715 17.0525 13.2715C18.3392 13.2715 19.3761 14.4519 19.354 15.8915C19.354 17.329 18.3392 18.5095 17.0525 18.5095Z"
+                    fill="#D3BEFF"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_43_42">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> </i
+          ></a>
+
+          <!-- Telegram -->
+          <a
+            title="Telegram"
+            class="hover:scale-110 transition-all"
+            href="https://telegram.org"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="w-14 h-14"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.4174 18.1817L12.0204 23.7659C12.5884 23.7659 12.8344 23.5219 13.1294 23.2288L15.7925 20.6838L21.3106 24.7249C22.3226 25.2889 23.0357 24.9919 23.3087 23.7939L26.9308 6.82145L26.9318 6.82045C27.2528 5.32441 26.3907 4.7394 25.4047 5.10641L4.1142 13.2576C2.66117 13.8216 2.68317 14.6316 3.8672 14.9986L9.31033 16.6917L21.9536 8.7805C22.5486 8.38649 23.0897 8.60449 22.6446 8.9985L12.4174 18.1817Z"
+                  fill="#D3BEFF"
+                />
+              </svg> </i
+          ></a>
+
+          <!-- Github -->
+          <a
+            title="Github"
+            class="hover:scale-110 transition-all"
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="w-14 h-14"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.1028 26C11.8801 26 12.0998 25.6959 12.0998 25.3072C12.0998 24.9186 12.0998 24.0737 12.0829 22.874C8.04446 23.7358 7.18271 20.9478 7.18271 20.9478C6.52372 19.3088 5.56059 18.8525 5.56059 18.8525C4.24262 17.9739 5.66197 17.9908 5.66197 17.9908C7.11512 18.0922 7.89239 19.4608 7.89239 19.4608C9.19346 21.6574 11.2887 21.0154 12.1167 20.6436C12.1842 19.9171 12.5053 19.2243 13.046 18.7174C9.81865 18.3625 6.42234 17.129 6.42234 11.6544C6.40544 10.235 6.94615 8.84946 7.92618 7.81874C7.75721 7.4639 7.26719 6.01075 8.04446 4.03379C8.04446 4.03379 9.26105 3.64516 12.0491 5.50384C14.4316 4.86175 16.9323 4.86175 19.3148 5.50384C22.069 3.66206 23.3025 4.03379 23.3025 4.03379C24.0798 5.99385 23.5898 7.447 23.4546 7.81874C24.4346 8.84946 24.9584 10.235 24.9415 11.6544C24.9415 17.1459 21.5452 18.3456 18.301 18.7005C18.8079 19.1229 19.281 20.0015 19.281 21.3364C19.281 23.2627 19.2641 24.7834 19.2641 25.2396C19.2641 25.6114 19.4331 25.9155 20.2611 25.9155L11.1028 26Z"
+                  fill="#D3BEFF"
+                />
+              </svg> </i
+          ></a>
+
+          <!-- Medium -->
+          <a
+            title="Medium"
+            class="hover:scale-110 transition-all"
+            href="https://medium.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="w-14 h-14"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_43_48)">
+                  <path
+                    d="M13.5025 22.2125C13.6179 22.2127 13.7321 22.2356 13.8387 22.2799C13.9452 22.3242 14.042 22.3891 14.1235 22.4708C14.205 22.5525 14.2696 22.6495 14.3136 22.7561C14.3576 22.8628 14.3802 22.9771 14.38 23.0925C14.3798 23.2079 14.357 23.3222 14.3126 23.4287C14.2683 23.5353 14.2035 23.632 14.1217 23.7135C14.04 23.795 13.9431 23.8596 13.8364 23.9036C13.7297 23.9476 13.6154 23.9702 13.5 23.97C13.2669 23.9697 13.0436 23.8768 12.879 23.7118C12.7144 23.5467 12.6222 23.3231 12.6225 23.09C12.6228 22.857 12.7157 22.6336 12.8808 22.469C13.0458 22.3045 13.2694 22.2122 13.5025 22.2125ZM27.2825 16.7788C27.1671 16.7787 27.0529 16.7559 26.9463 16.7116C26.8397 16.6674 26.7429 16.6026 26.6613 16.5209C26.5798 16.4393 26.5151 16.3424 26.471 16.2357C26.4269 16.1291 26.4043 16.0148 26.4044 15.8994C26.4045 15.784 26.4273 15.6697 26.4715 15.5632C26.5157 15.4566 26.5805 15.3597 26.6622 15.2782C26.7439 15.1967 26.8408 15.132 26.9474 15.0879C27.0541 15.0438 27.1684 15.0212 27.2838 15.0213C27.5168 15.0214 27.7403 15.1142 27.9049 15.2791C28.0696 15.444 28.162 15.6676 28.1619 15.9006C28.1617 16.1337 28.069 16.3572 27.9041 16.5218C27.7391 16.6865 27.5156 16.7789 27.2825 16.7788ZM27.2825 13.1838C26.562 13.1844 25.8712 13.471 25.3617 13.9804C24.8522 14.4899 24.5657 15.1807 24.565 15.9013C24.565 16.1925 24.6138 16.4825 24.7088 16.765L15.7325 21.5438C15.4836 21.1824 15.1506 20.8869 14.7621 20.6829C14.3736 20.4788 13.9413 20.3723 13.5025 20.3725C12.4663 20.3725 11.5225 20.9663 11.065 21.8925L3.00126 17.64C2.14876 17.1925 1.51126 15.79 1.57876 14.5125C1.61376 13.8463 1.84376 13.3288 2.19501 13.1288C2.41751 13.0038 2.68501 13.0138 2.97001 13.1625L3.02251 13.1913C5.16001 14.3163 12.1525 18 12.4475 18.1363C12.9013 18.3475 13.1538 18.4325 13.9288 18.065L28.3838 10.5475C28.5963 10.4675 28.8438 10.2638 28.8438 9.95502C28.8438 9.52752 28.4013 9.35877 28.4 9.35877C27.5775 8.96502 26.3138 8.37377 25.0813 7.79627C22.4463 6.56252 19.46 5.16502 18.1488 4.47752C17.0163 3.88502 16.105 4.38502 15.9425 4.48502L15.6275 4.64127C9.72501 7.56002 1.82501 11.4725 1.37501 11.7463C0.571258 12.2363 0.0725075 13.2125 0.00750754 14.4238C-0.0924925 16.345 0.886258 18.3488 2.28751 19.0825L10.815 23.48C10.9089 24.126 11.2322 24.7166 11.7256 25.1439C12.219 25.5713 12.8497 25.8068 13.5025 25.8075C14.2154 25.8063 14.8994 25.5254 15.4073 25.0252C15.9153 24.5249 16.2066 23.8453 16.2188 23.1325L25.6113 18.0413C26.0863 18.4138 26.6775 18.6175 27.2825 18.6175C28.003 18.6169 28.6939 18.3303 29.2033 17.8209C29.7128 17.3114 29.9993 16.6205 30 15.9C29.9993 15.1795 29.7128 14.4887 29.2033 13.9792C28.6939 13.4697 28.003 13.1832 27.2825 13.1825"
+                    fill="#D3BEFF"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_43_48">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> </i
+          ></a>
+
+          <!-- Youtube -->
+          <a
+            title="Youtube"
+            class="hover:scale-110 transition-all"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="w-14 h-14"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_43_50)">
+                  <path
+                    d="M26.3595 5.71976C25.3694 4.5428 23.5414 4.06274 20.0504 4.06274H7.37791C3.807 4.06274 1.94802 4.57382 0.961661 5.82685C0 7.04849 0 8.8486 0 11.34V16.0886C0 20.9152 1.14102 23.3659 7.37791 23.3659H20.0504C23.0779 23.3659 24.7554 22.9422 25.8407 21.9036C26.9537 20.8385 27.4286 19.0994 27.4286 16.0886V11.34C27.4286 8.71264 27.3542 6.90192 26.3595 5.71976ZM17.6092 14.3699L11.8547 17.3774C11.7261 17.4446 11.5854 17.478 11.4449 17.478C11.2858 17.478 11.1271 17.4352 10.9865 17.3501C10.7217 17.1897 10.5601 16.9027 10.5601 16.5932V10.5975C10.5601 10.2885 10.7213 10.0018 10.9855 9.84133C11.2498 9.68083 11.5785 9.66985 11.8527 9.8123L17.6072 12.8004C17.9 12.9524 18.0838 13.2546 18.0843 13.5844C18.0846 13.9145 17.9016 14.2172 17.6092 14.3699Z"
+                    fill="#D3BEFF"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_43_50">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> </i
+          ></a>
+        </div>
+        <!-- End: Social Icons -->
+
+        <!-- Start: Hamburger -->
+        <div class="">
           <button title="Menu" type="button" id="menu-button">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="46"
+              viewBox="0 0 80 46"
               fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 9h16.5m-16.5 6.75h16.5"
-              />
+              <rect width="80" height="46" rx="23" fill="#D3BEFF" />
+              <rect x="29" y="12.5" width="22" height="2" rx="1" fill="white" />
+              <rect x="21" y="21.5" width="30" height="2" rx="1" fill="white" />
+              <rect x="35" y="30.5" width="16" height="2" rx="1" fill="white" />
             </svg>
           </button>
         </div>
+        <!-- End: Hamburger -->
       </div>
     </nav>
 
-    <!-- Mobile Navbar -->
+    <!-- Hidden Menu -->
     <div
       id="mobile-navbar"
       class="fixed grid place-items-center top-0 left-0 w-full h-full bg-[#13072d]/95 backdrop-blur z-50 transform -translate-y-full overflow-y-auto transition-transform duration-300 ease-in-out"
@@ -172,7 +299,7 @@
         X
       </button>
       <ul
-        class="flex flex-col gap-12 p-8 text-center text-3xl font-inter font-semibold"
+        class="flex flex-col gap-12 p-8 text-center text-3xl lg:text-5xl font-inter font-semibold"
       >
         <li>
           <a
@@ -208,10 +335,10 @@
 
     <!-- Hero Section -->
     <section
-      class="relative bg-hero-bg bg-cover bg-center flex flex-col items-center justify-center min-h-[100dvh]"
+      class="relative bg-hero-bg bg-cover bg-center flex flex-col items-center justify-center min-h-[100dvh] rounded-b-[7rem]"
     >
       <!-- Background Overlay -->
-      <div class="absolute inset-0 bg-[#13072d]/95 z-0"></div>
+      <div class="absolute inset-0 bg-[#13072d]/80 z-0"></div>
       <!-- Shadow -->
       <div
         class="absolute top-1/4 left-0 right-0 bottom-0 mx-auto h-[250px] w-[600px] bg-blur-bg/50 z-10 rounded-full blur-[200px]"
@@ -226,8 +353,8 @@
             <img
               src="./assets/images/elder-wallet-logo.svg"
               alt=""
-              class="w-16 h-auto inline-block mx-auto sm:pt-4"
-            /><span class="font-extrabold text-7xl sm:text-9xl"
+              class="w-16 lg:w-24 h-auto inline-block mx-auto sm:pt-4"
+            /><span class="font-extrabold text-7xl sm:text-9xl uppercase"
               >Elder Wallet</span
             >
           </h1>
@@ -266,7 +393,7 @@
 
       <!-- Arrow Down Icon -->
       <a title="Scroll down" href="#about">
-        <div class="z-40 absolute bottom-4 left-4 animate-bounce">
+        <div class="z-40 absolute bottom-20 left-4 animate-bounce">
           <svg
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="inherit"
@@ -314,10 +441,6 @@
         ></div>
       </div>
       <!-- End: Purple Overlay -->
-
-      <div
-        class="absolute -top-4 left-0 w-full h-14 bg-transparent backdrop-blur-sm z-10"
-      ></div>
 
       <div
         class="flex flex-col sm:flex-row items-center justify-between gap-8 relative container mx-auto text-white/70 z-20"
